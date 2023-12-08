@@ -74,6 +74,7 @@ document.querySelector("#student-list").addEventListener("click",(e) => {
 
 // Clear All Fields
 
+
 function clearFields() {
   document.querySelector("#firstName").value = "";
   document.querySelector("#lastName").value = "";
@@ -86,6 +87,6 @@ document.querySelector("#student-list").addEventListener("click", (e) => {
   target = e.target;
   if(target.classList.contains("delete")) {
     target.parentElement.parentElement.remove();
-    showAlerts("Student Data Deleted");
+    showAlerts("Student Data Deleted", "danger");
   }
 });
